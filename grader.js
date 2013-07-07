@@ -25,7 +25,8 @@ var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
 var rest = require('restler');
-var HTMLFILE_DEFAULT = "index.html";
+var sys = require('util');
+var HTMLFILE_DEFAULT = "";
 var CHECKSFILE_DEFAULT = "checks.json";
 var URL_DEFAULT = '';
 
@@ -47,7 +48,7 @@ var loadChecks = function(checksfile) {
     return JSON.parse(fs.readFileSync(checksfile));
 };
 
-var checkHtmlFile = function(htmlpage,checkfile) {
+var checkHtmlFile = function(htmlpage,checksfile) {
     $ = cheerioHtmlFile(htmlpage);
     var checks = loadChecks(checksfile).sort();
     var out = {};
@@ -64,22 +65,29 @@ var clone = function(fn) {
     return fn.bind({});
 };
 
+var gradehtml = function (htmlpage,jsonchecks) {
+   var checkJson = checkHtmlFile(htmlpage,jsonchecks);
+   var outJson = JSON.stringify(checkJson, null, 4);
+   console.log(outJson);
+}
+
 if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
-        .option('-u, --url <URL_path>', 'URL to index.html', function (){}, URL_DEFAULT)
+        .option('-u, --url <URL_path>', 'URL to index.html')
         .parse(process.argv);
-    if (program.url == '') {
+    if (program.file) {
       var page = fs.readFileSync(program.file);
-      var checkJson = checkHtmlFile(page,program.checks);
-      var outJson = JSON.stringify(checkJson, null, 4);
-      console.log(outJson);
-    } else {
-      var url = program.url + '/' + program.file;
-      rest.get(url).on('complete', function (data) {
-        console.log("url loaded");
-        console.log(data);
+      gradehtml(page, program.checks);
+    }
+    if (program.url) {
+      rest.get(program.url).on('complete', function (result) {
+        if (result instanceof Error) {
+          sys.puts('Error: ' + result.message);
+        } else {
+          gradehtml(result, program.checks);
+        }
       });
     }
 } else {
