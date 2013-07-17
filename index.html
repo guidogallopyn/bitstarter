@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
     <style type="text/css">
@@ -72,10 +74,25 @@
       .statistics h3, .statistics p {
         color: white;
       } 
-
-      div.row {
-        border: 1px solid;
+      /* Marketin copy and footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom:2.5%;
+        text-align: justify;
       }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }   
     </style>
   </head>
 
@@ -158,7 +175,62 @@
     </div>
     <!--  Beyond this point is the marketing section -->  
     <div class="row-fluid section1">
-      
+      <div class="span5 offset1 asset">
+        <img class="img-polaroid" src="http://placehold.it/480x300">
+      </div>
+      <div class="span5 copy">
+         <p> 
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum pellentesque dui id aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget aliquet purus. Sed eu mollis neque, et consectetur dui. Vestibulum pretium eu velit ac adipiscing. In molestie augue nec risus vulputate, nec ullamcorper dolor interdum. Cras id luctus dolor. Cras nec neque vestibulum, egestas mi eu, pretium justo. Suspendisse egestas sed sem vel molestie. Proin molestie ac lectus quis dapibus. Vestibulum sit amet dapibus enim. Aenean adipiscing eget ligula ut euismod. Donec magna quam, viverra a malesuada a, pellentesque eu libero. Pellentesque at iaculis erat. Integer leo dolor, dapibus non adipiscing ut, dapibus vitae nunc.
+         </p>
+      </div>   
+    </div>
+    <div class="row-fluid section2">
+      <div class="span5 offset1 copy copy-right">
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum pellentesque dui id aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing lit. Sed eget aliquet purus. Sed eu mollis neque, et consectetur dui. Vestibulum pretium eu velit ac adipiscing. In molestie augue nec risus vulputate, nec ullamcorper dolor interdum. Cras id luctus dolor. Cras nec neque vestibulum, egestas mi eu, pretium justo. Suspendisse egestas sed sem vel molestie. Proin molestie ac lectus quis dapibus. Vestibulum sit amet dapibus enim. Aenean adipiscing eget ligula ut euismod. Donec magna quam, viverra a malesuada a, pellentesque eu libero. Pellentesque at iaculis erat. Integer leo dolor, dapibus non adipiscing ut, dapibus vitae nunc.
+         </p>
+      </div>
+      <div class="span5 asset">                                                                                                                             
+        <img class="img-polaroid" src="http://placehold.it/480x300">                                                                                        
+      </div> 
+    </div>
+    <!-- FAQ accordion using jquery.js and bootstrap.js  -->
+    <div class="row-fluid faq">
+      <div class="span10 offset1">
+        <h3>FAQ</h3>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                What does FAQ stand for?
+              </a>
+            </div>
+            <div class="accordion-body collapse" id="collapseOne">
+              <div class="accordion-inner">
+                Frequently Asked Question.
+              </div>
+            </div>              
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                What's a Frequently Asked Question? 
+              </a>
+            </div>
+            <div class="accordion-body collapse" id="collapseTwo">
+              <div class="accordion-inner">
+                A question which is commonly asked by users.
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!-- CC by-SA 3.0 license   -->
+    <div class="row-fluid footer">
+      <div class="span12">
+         <p>This work is lcensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.</p> 
+      </div>
     </div>
   </body>
 </html>
