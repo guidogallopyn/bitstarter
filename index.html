@@ -1,62 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>VocalSpellzz</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
     <style type="text/css">
-      /* large desktop */
-      @media (min-width: 980px) {
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
         body {
          padding-top: 60px;
         }
-        .linediv-l {
-          border-right: 1px white solid;
+       .linediv-l {
+         border-right: 1px white solid;
         }
-        .linediv-r {
-          border-left: 1px white solid;
-        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
       }
-      /* landscape phones and down */
-      @media (max-width: 480px) {
-        .copy {
-          padding: 2.5% 10%
-        }
-        .linediv-l {
-          border-bottom: 1px white solid;
-        }
-        .linediv-r {
-          border-top: 1px white solid;
-        }
-      }
-      
-      /* all form factors */
 
-      /* main body and headings */
-      body {
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
+
+      /* All form factors */
+
+      /* Main body and headings */
+      body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
       .heading, .subheading {
-        font-family: 'Tangerine', Helvetica, Arial, sans-serif;
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
-      }
-      .heading h1 {
-        font-size: 96px;
-        line-height: 102px;
-      }
-      .subheading p {
-        padding-top: 1.5%;
-        font-size: 36px;
-        line-height: 42px;
       }
       p.lead {
         padding-top: 1.5%;
@@ -67,15 +59,16 @@
         font-size: 18px;
         line-height: 24px;
       }
-      /* video pitch and action */
+
+      /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
       }
       .order {
         padding: 2% 0%;
-      } 
-      .actions { 
-        background-color:#343434;
+      }
+      .actions {
+        background-color: #343434;
         padding: 3% 0%;
       }
       .video, .thermometer, .order, .social, .statistics {
@@ -83,17 +76,13 @@
       }
       .statistics h3, .statistics p {
         color: white;
-      } 
-      /* Marketing copy and footer */
+      }
+
+      /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
-        padding-bottom:2.5%;
+        padding-bottom: 2.5%;
         text-align: justify;
-      }
-      .copy h3 {
-        font-family: 'Tangerine', Helvetica, Arial, sans-serif;
-        font-size: 48px;
-        text-align: left; 
       }
       .asset {
         padding: 2.5% 0%;
@@ -107,169 +96,206 @@
       }
       .footer a {
         color: #ccccff;
-      }   
+      }
     </style>
   </head>
-
   <body>
-    <!-- moble-friendly navbar -->
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-	  <a class="brand" href="#">VocalSpellzz</a>
+          <a class="brand" href="#">Bitstarter</a>
           <div class="nav-collapse collapse">
-	    <ul class="nav">
-	      <li class="active"><a href="#">Home</a></li>
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li> 
+              <li><a href="#contact">Contact</a></li>
             </ul>
-	  </div>  
+          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>VocalSpellzz</h1>
+          <h1>Product: Development Version</h1>
         </div>
-      </div>
+      </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-          <p>A cloud based service for spoken magic spells in online gaming.</p>
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">One sentence description.</p>
         </div>
       </div>
-    </div>
-    <div class="row-fluid pitch">
-      <div class="span5 offset1 video">
-         <img class="img-polaroid" src="http://placehold.it/480x300">
-      </div> 
-      <!-- actions div for statistics, order and share buttons -->
-      <div class="span5 actions">
-        <div class="span8 offset2">
-          <div class="statistics">
-            <div class="span4"> 
-              <div class="linediv-l">
-                <h3>0</h3><p>backers</p>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="linediv-c">
-                <h3>$0</h3><p>of $200,000</p>
-              </div>
-            </div>
-            <div class="span4">
-              <div class="linediv-r">
-                <h3>100</h3><p>days left</p>
-              </div>
-            </div>
-          </div>  
-        </div> 
-        <div class="span10 offset1">
-          <!-- Bootstrap progress bar -->
-          <div class="thermometer progress active">
-            <div class="bar bar-success" style="width: 0%;"></div>
-            <div class="bar bar-warning" style="width: 100%;"></div>
-          </div>
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+          <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300">
         </div>
-        <div class="span6 offset3 order">
-          <!-- Standard bootstrap button for ordering --> 
-          <button class="btn btn-success btn-large">Preorder</button>
-        </div>
-        <div class="span8 offset2 social">
-          <!-- Social buttons, not included in bootstrap  -->
-          <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-          <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-        </div>           
-      </div>       
-    </div>
-    <!--  Beyond this point is the marketing section -->
-    <div class="row-fluid section1">
-      <div class="span5 offset1 copy copy-right">
-         <h3>Gamers: cast powerfull spoken magic spells in your favorite online game</h3>
-         <p>
-In a VocalSpellzz empowerd game, spellcasting characters first go to Magic School to learn the ancient art of spell casting by using the power of you voice. In the heat of the battle, Vocalspellzz gives you the power to cast powerfull magic spells by voice by using the microphone you use for online gaming. With your liking and backing, more games will adopt VocalSpellzz, and as a reward you will receive an exclusive magic spell, only available to VocalSpellzz backers, when your game of choice enables VocalSpellzz.
-         </p>
-      </div>
-      <div class="span5 asset">
-        <img class="img-polaroid" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vg_icon.svg/500px-Vg_icon.svg.png">
-      </div>
-    </div>  
-    <div class="row-fluid section2">
-      <div class="span5 offset1 copy copy-right">
-         <h3>Game Developers: improve gameplay and gain an innovative edge</h3> 
-         <p>
-The VocalSpellzz web-service makes it easy to empower your game with VocalSpellz technology. Audio with the spoken spell cast is streamed to the VocalSpellzz cloud where the intended spell is recognized and returned to your game with an indication of strength.In addition VocalSpellz has a wizard apprentice service that teaches gamers how to cast spoken spells. Of course, the VocalSpellzz service allows complete customization to the magic spells used in your game and the language used by magic characters in your game. Sign-up to help fund the development of this innovative new gaming technology and receive discounts when VocalSpellz is in service.
-         </p>
-      </div>
-      <div class="span5 asset">
-        <img class="img-polaroid" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Vg_development_icon.svg/500px-Vg_development_icon.svg.png">
-      </div> 
-    </div>
-    <!-- FAQ accordion using jquery.js and bootstrap.js  -->
-    <div class="row-fluid faq">
-      <div class="span10 offset1">
-        <h3>FAQ</h3>
-        <div class="accordion" id="accordion2">
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                Is my favorit game powered by VocalSpellzz?
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseOne">
-              <div class="accordion-inner">
-                 At this moment there are no VocalSpellzz empowered games.
+
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 actions">
+          <div class="row-fluid">
+          <div class="span8 offset2">
+            <div class="row-fluid statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <h3>1000</h3> <p>backers</p>
+                </div>
               </div>
-            </div>              
-          </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                Where can I see a demo of this cool technology? 
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseTwo">
-              <div class="accordion-inner">
-                 A demonstration video will be posted to youTube shortly. Stay tuned.
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3>10</h3> <p>days left</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                How does VocalSpellzz work? 
-              </a>
+          <div class="row-fluid">
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
-            <div class="accordion-body collapse" id="collapseThree">
-              <div class="accordion-inner">
-                VocalSpellzz is built on top of a cloudbased speech recognition service that can recognize speech that is streamed to the cloud. But it knows the special words of magic spells and the right pronounciations of the spells used in a particular game.
+          </div>
+          </div>
+          <div class="row-fluid">
+          <div class="span6 offset3 order">
+            <!-- Standard Bootstrap button. -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+            <button class="btn btn-success btn-large">Preorder</button>
+          </div>
+          </div>
+          <div class="row-fluid">
+          <div class="span8 offset2 social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
+        </div>
+        <div class="span5 copy">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
+          </p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
+          </p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid"  alt="Placeholder" src="http://placehold.it/480x300">
+        </div>
+      </div>
+
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      <div class="row-fluid faq">
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
+                    What does FAQ stand for?
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Frequently Asked Question.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    What's a Frequently Asked Question?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    A question which is commonly asked by users.
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="accordion-group">
-            <div class="accordion-heading">
-              <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-                How do I integrate VocalSpellzz in my game?
-              </a>
-            </div>
-            <div class="accordion-body collapse" id="collapseFour">
-              <div class="accordion-inner">
-                Find our more <a href="#sales">on our sales page.</a>
-              </div>
-            </div>
-          </div> 
-        </div>
+
       </div>
-    </div>
-    <!-- CC by-SA 3.0 license   -->
-    <div class="row-fluid footer">
-      <div class="span12">
-         <p>This work is lcensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a>, without all the cruft that would otherwise be put at the bottom of the page.</p> 
+
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
+        </div>
       </div>
     </div>
   </body>
